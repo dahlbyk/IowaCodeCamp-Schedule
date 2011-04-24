@@ -8,6 +8,20 @@
 <link rel="apple-touch-icon" href="iui-0.31/iui/iui-logo-touch-icon.png" />
 <meta name="apple-touch-fullscreen" content="YES" />
 <style type="text/css" media="screen">@import "iui-0.31/iui/iuix.css";</style>
+<style type="text/css" media="screen">
+body > ul > li {
+    font-size: 17px;
+}
+li.info {
+    font-size: 14px;
+    padding: 4px 0 4px 10px;
+}
+span.time {
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+}
+</style>
 <script type="application/x-javascript" src="iui-0.31/iui/iuix.js"></script>
 </head>
 
@@ -18,13 +32,18 @@
     </div>
     
     <ul id="home" title="Home" selected="true">
-        <li>8:00–8:40a — Breakfast</li>
-        <li>8:45–9:00a — Welcome</li>
-        <li>10:15–10:30a — Break</li>
-        <li>11:45–12:45p — Lunch</li>
-        <li>2:00–2:15p — Break</li>
-        <li>3:30–3:45p — Break</li>
-        <li>5:00–5:30p — Closing</li>
+        <li class="info"><span class="time">8:00–8:40a</span>Breakfast</li>
+        <li class="info"><span class="time">8:45–9:00a</span>Welcome</li>
+        <li><a href="#session1"><span class="time">9:00–10:15a</span>Session 1</a></li>
+        <li class="info"><span class="time">10:15–10:30a</span>Break</li>
+        <li><a href="#session2"><span class="time">10:30–11:45a</span>Session 2</a></li>
+        <li class="info"><span class="time">11:45–12:45p</span>Lunch</li>
+        <li><a href="#session3"><span class="time">12:45–2:00p</span>Session 3</a></li>
+        <li class="info"><span class="time">2:00–2:15p</span>Break</li>
+        <li><a href="#session4"><span class="time">2:15–3:30p</span>Session 4</a></li>
+        <li class="info"><span class="time">3:30–3:45p</span>Break</li>
+        <li><a href="#session5"><span class="time">3:45–5:00p</span>Session 5</a></li>
+        <li class="info"><span class="time">5:00–5:30p</span>Closing</li>
     </ul>
     <ul id="session1" title="Session 1">
         <li class="group">Amana Room</li>
